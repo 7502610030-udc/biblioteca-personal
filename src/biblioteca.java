@@ -1,24 +1,30 @@
-import java.util.ArrayList;
+public class Biblioteca {
+    // Usamos la ruta completa de Java para no tener que usar la palabra 'import'
+    private java.util.ArrayList<String> libros = new java.util.ArrayList<>();
 
-public class biblioteca {
-
-    private ArrayList<String> libros =new ArrayList<>();
-
+    // Módulo 1: Registrar libro
     public void registrarLibro(String titulo) {
         libros.add(titulo);
-        System.out.println("[log] Guardando en la lista de memoria: " + titulo);
+        System.out.println("[LOG] Guardando en la lista en memoria: " + titulo);
     }
 
-    public boolean buscarLibro(String titulo){
-        return false;
+    // Módulo 2: Buscar libro
+    public boolean buscarLibro(String titulo) {
+        for (String libro : libros) {
+            if (libro.equalsIgnoreCase(titulo)) {
+                return true; 
+            }
+        }
+        return false; 
     }
 
-    public int contraLibros(){
+    // Módulo 3
+    public int contarLibros() {
         return 0;
     }
 
-    public void listarLibros(){
-        
+    // Módulo 4
+    public void listarLibros() {
+        // Se programará en su rama correspondiente
     }
-    
-}
+} 
