@@ -36,6 +36,8 @@ public class BibliotecaCli {
                     }
                     break;
                 case 3:
+                    int total = biblioteca.contarLibros();
+                    System.out.println("Total de libros registrados: " + total);
                     break;
                 case 4:
                     break;
