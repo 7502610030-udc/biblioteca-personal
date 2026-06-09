@@ -6,6 +6,7 @@ public class biblioteca {
 
     public void registrarLibro(String titulo) {
         libros.add(titulo);
+        System.out.println("[log] Guardando en la lista de memoria: " + titulo);
     }
 
     public boolean buscarLibro(String titulo){
