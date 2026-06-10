@@ -16,9 +16,18 @@ public class Biblioteca {
     }
 
     public int contarLibros() {
-            return libros.size();
-        }
+        return libros.size();
     }
+    
 
     public void listarLibros() {
-    } 
+        if (libros.isEmpty()) {
+            System.out.println("La biblioteca está vacía.");
+        }else{
+            System.out.println("--- Lista de Libros ---");
+            for (int i = 0; i < libros.size(); i++){
+                System.out.println((i + 1) + ". " + libros.get(i));
+            }
+        }
+    }
+}
