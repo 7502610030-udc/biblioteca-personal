@@ -40,6 +40,7 @@ public class BibliotecaCli {
                     System.out.println("Total de libros registrados: " + total);
                     break;
                 case 4:
+                    biblioteca.listarLibros();
                     break;
                 case 5:
                     System.out.println("¡Hasta luego!");
